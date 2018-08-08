@@ -1,4 +1,10 @@
 var sounds = document.querySelectorAll(".audio");
+
+
+for(var i = 0; i < sounds.length; i++){
+    sounds[i].load();
+}
+
 //Add Event Listener to the pads
 
 $(".pad").click(function(event){
