@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    margin: 0 auto;
+   color: azure;
+}
+.container{
+    margin: 20px auto;
+    width: 780px;
+    height: 700px;
+}
+.pad{
+    width: 150px;
+    height: 150px;
+    float: left;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 0;
+/*    margin: px 5px 5px auto;*/
+/*    background-color: skyblue;*/
+ 
+}
+.pinkPad{
+    background: radial-gradient(pink 1%, #e809d9 79%);
+}
+.greenPad{
+     background: radial-gradient(lightgreen 1%, #4cff00 69%);
+}
+.redPad{
+    background: radial-gradient(#f97c7c 1%,  red 69%);
+}
+.yellowPad{
+     background: radial-gradient(#fcfc99 1%,   #fffa00 59%);
+}
+.bluePad{
+     background: radial-gradient(#4c8dff 1%,  #3823db 99%);
+   
+}
+
+.pad:hover{
+    opacity: 0.8;
+/*     background: radial-gradient(gray 1%,  black 69%);*/
+}
+
+
+
+/*
+#pad4{
+    background: radial-gradient(#f7c27e 1%, #f78b00 59%);
+}
+#pad5{
+    background: radial-gradient(#dbb0f2 1%,  #a000f7 99%);
+}
+#pad6{
+    background: radial-gradient(lightblue 1%,  #099ae8 79%);
+}
+#pad7{
+    background: radial-gradient(#fcfc99 1%,   #ffff00 99%);
+
+}
+
+*/
+
+
