@@ -1,24 +1,34 @@
-var sounds = document.querySelectorAll(".audio");
+//var sounds = document.querySelectorAll(".audio");
 
+var sound = new Howl({
+  src: ['assets/other/Pads/pad'+0+'.mp3', 'assets/other/Pads/pad17.mp3']
+});
 
-for(var i = 0; i < sounds.length; i++){
-    sounds[i].load();
+var sd = [];
+for(var i = 0; i < 20; i++){
+   var sound = new Howl({
+       src: ['assets/other/Pads/pad'+i+'.mp3', 'assets/other/Pads/pad17.mp3']
+   }); 
+    sd[i] = sound;
 }
 
-//Add Event Listener to the pads
 
+//Add Event Listener to the pads
 $(".pad").click(function(event){
    event.stopPropagation();
-   
+ 
+    
+    
      playSound($(this).text());
-   
+
 });
 
 
 
 function playSound(soundIndex){
     parseInt(soundIndex);
-    sounds[soundIndex].load();
-    sounds[soundIndex].play();
+    
+    sd[soundIndex].play();
+
 }
 
