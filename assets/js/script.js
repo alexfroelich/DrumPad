@@ -10,6 +10,7 @@ for(var i = 0; i < 20; i++){
        src: ['assets/other/Pads/pad'+i+'.mp3', 'assets/other/Pads/pad17.mp3']
    }); 
     sd[i] = sound;
+   sd[i].load();
 }
 
 
